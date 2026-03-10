@@ -40,8 +40,7 @@ class EmailProcessor:
             )
             raise
 
-        classification = await self.ai_agent.classify_email(message.subject, body)
-        summary = await self.ai_agent.summarize_email(message.subject, body)
+        classification, summary = await self.ai_agent.process_email(message.subject, body)
 
         await self.repository.save_processing_result(
             email_id=message.email_id,
