@@ -1,0 +1,9 @@
+Hello team,
+
+This is a test email for the AI processing service.
+
+Please classify this email and generate a short summary.
+Make sure the body is read correctly from the storage.
+
+Best regards,
+Test Sender
